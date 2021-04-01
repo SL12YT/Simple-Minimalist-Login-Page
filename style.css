@@ -1,0 +1,87 @@
+body{
+    background-image: linear-gradient( 135.9deg,  rgba(109,25,252,1) 16.4%, rgba(125,31,165,1) 56.1% );
+}
+
+@font-face {
+    font-family: Azonix; /* Имя шрифта */
+    src: url(Azonix.otf); /* Путь к файлу со шрифтом */
+   }
+
+.form{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    margin-top: -175px;
+    margin-left : -250px;
+    width: 500px;
+    height: 350px;
+    background-color: rgba(31, 31, 31, 0.75);
+    border-radius: 30px;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#titi{
+    color : #ddd;
+    text-align : center;
+    font-family: Azonix;
+    font-size : 32pt;
+}
+
+.form input[type="text"], .form input[type="password"]{
+    display : block;
+    margin : 20px auto;
+    text-align: center;
+    font-size : 16pt;
+    height : 40px;
+    width  : 250px;
+    font-family: "Consolas";
+    border : 2px solid;
+    border-color : rgb(0, 119, 255);
+    border-radius : 10px;
+    transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.form input[type="submit"]{
+    display : block;
+    margin : 20px auto;
+    height : 40px;
+    width : 200px;
+    border : 2px solid;
+    border-color : rgb(0, 255, 119);
+    border-radius : 10px;
+    font-family : consolas;
+    font-size : 14pt; 
+    transition: 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.form input[type="text"]:hover, .form input[type="password"]:hover{
+    width : 350px;
+    height : 56px;
+    font-size : 22pt;
+    border-radius : 14px;
+
+}
+
+.form input[type="text"]:focus, .form input[type="password"]:focus{
+    width : 350px;
+    height : 56px;
+    font-size : 22pt;
+    border-radius : 14px;
+
+}
+
+.form input[type="submit"]:hover{
+    height: 56px;
+    width : 280px;
+    font-size : 20pt;
+    background-color: rgb(0, 255, 119);
+    color : white;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:focus{
+    height: 56px;
+    width : 280px;
+    font-size : 20pt;
+    background-color: rgb(0, 255, 119);
+    color : white;
+}
